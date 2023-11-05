@@ -27,10 +27,10 @@ const [text, setText] = useState('');
   return (
     <>
     <div className='container'>
-          <h1>{props.heading}</h1>
+          <h1 className={`text-${props.mode===`light`?`dark`:`light`}`}>{props.heading}</h1>
         <div className="mb-3">
         
-        <textarea className="form-control" value={ text} onChange={handleOnChange} id="myBox" rows="10"></textarea>
+        <textarea className="form-control" value={ text} onChange={handleOnChange} style={{backgroundColor: props.mode === `light`? `white`: `#132333`, color: props.mode === `light`? `black`: `white`}} id="myBox" rows="10"></textarea>
         </div>
         <div className="container my-2">
         <button className="btn btn-primary mx-1" onClick={handleUpClick}>Convert to uppercase</button>
@@ -43,8 +43,8 @@ const [text, setText] = useState('');
     </div>
 
     <div className="container my-2">
-      <h1>Your text summary</h1>
-      <p>{text.split(" ").length } words, {text.length} characters</p>
+      <h1 className={`text-${props.mode===`light`?`dark`:`light`}`}>Your text summary</h1>
+      <p className={`text-${props.mode===`light`?`dark`:`light`}`}>{text.split(" ").length } words, {text.length} characters</p>
     </div>
 
 

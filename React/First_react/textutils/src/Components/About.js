@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default function About() {
+export default function About(props) {
   const [myStyle, setMyStyle] = useState(
     {
       color: 'white',
@@ -27,10 +27,10 @@ export default function About() {
       setBtnText("Enable Light Mode");
     }
   }
-
+//
   return (
     <div className='container' >
-          <h2 className='my-4'>About Us</h2>
+          <h2 className={`my-4 text-${props.mode===`light`?`dark`:`light`}`}>About Us</h2>
         <div className="accordion" id="accordionExample">
     <div className="accordion-item" >
       <h2 className="accordion-header">
