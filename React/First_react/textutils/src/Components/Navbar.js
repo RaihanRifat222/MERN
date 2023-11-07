@@ -22,9 +22,17 @@ export default function Navbar(props) {
           <a className="nav-link disabled" aria-disabled="true">Disabled</a>
         </li>
       </ul>
-          <div className="form-check form-switch">
-            <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={props.changeMode}/>
-            <label className= {`form-check-label text-${props.mode} mx-3`} htmlFor="flexSwitchCheckDefault">Dark Mode</label>
+      
+          <div >
+          <button type="button" className="btn btn-primary" onClick={()=> props.changeMode('blue')}>Blue</button>
+          <button type="button" className="btn btn-secondary" onClick={()=> props.changeMode('dark')}>Dark</button>
+          <button type="button" className="btn btn-success" onClick={()=> props.changeMode('green')}>Green</button>
+          <button type="button" className="btn btn-danger" onClick={()=> props.changeMode('red')}>Red</button>
+          <button type="button" className="btn btn-warning" onClick={()=> props.changeMode('yellow')}>Yellow</button>
+          <button type="button" className="btn btn-light" onClick={()=> props.changeMode('light')}>Light</button>
+          
+            {/* <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={props.changeMode}/>
+            <label className= {`form-check-label text-${props.mode} mx-3`} htmlFor="flexSwitchCheckDefault">Dark Mode</label> */}
           </div>
       <form className="d-flex" role="search">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>

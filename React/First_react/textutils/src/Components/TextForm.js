@@ -4,9 +4,17 @@ import React, {useState} from 'react';
 export default function TextForm(props) {
 
 const handleUpClick =()=>{
-  
-    let newText = text.toUpperCase();
-    setText(newText);
+   
+    if (text.length === 0){
+      props.showAlert('Please enter some text', 'danger');
+    }
+    else {
+      let newText = text.toUpperCase();
+      setText(newText);
+      props.showAlert('Converted to uppercase', 'success');
+    }
+    
+    
 }
 
 const handleOnChange =(event)=>{
@@ -15,13 +23,27 @@ const handleOnChange =(event)=>{
 }
 
 const clearText =(event)=>{
-  setText("");
+  if (text.length === 0){
+    props.showAlert('Please enter some text', 'danger');
+  }
+  else{
+    setText('');
+    props.showAlert('Text has been cleared', 'success');
+  }
+  
 }
 const [text, setText] = useState('');
 
   const copyText =()=>{
-    let text = document.getElementById('myBox');
-    navigator.clipboard.writeText(text.value);
+     if (text.length === 0){
+      props.showAlert('Please enter some text', 'danger');}
+      else{
+        let text = document.getElementById('myBox');
+        navigator.clipboard.writeText(text.value);
+        props.showAlert('Text has been copied', 'success');
+      }
+
+
   }
 
   return (
