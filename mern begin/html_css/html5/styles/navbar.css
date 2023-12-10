@@ -1,0 +1,44 @@
+#salary thead, #salary tr, #salary td {
+    width: 30%;
+    border: 1px solid #000000;
+    grid-row: auto;
+    padding: 10px;
+       
+}
+nav{
+    padding-bottom: 10px;
+    font-size: x-large;
+    background-color: aquamarine;
+    padding-top: 0%;
+    margin-top: 0%
+}
+nav > ul{
+    display: flex;;
+}
+nav li{
+    list-style: none;
+   
+    margin-right: 50px;
+    padding-bottom: 10px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #000000;
+}
+
+nav li :hover{
+    color: #000000;
+    border-bottom: 2px solid #000000;
+    background-color: antiquewhite;
+}
+
+nav li .dropdown{
+    display: none;
+    position: absolute;
+    background-color: bisque;
+    padding-left: 0%;
+}
+nav li:hover .dropdown{
+    display: block;
+}

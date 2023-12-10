@@ -1,0 +1,19 @@
+Project Start 
+
+Two ways to create react app 
+
+1. Create React App 
+2. Vite 
+
+Vite is 10 to 100 times faster than JS based bundlers. It is created in Go language. 
+
+Create React App is a bundle based dev server. Slower than Vite.
+                 React 
+
+1. JSX (Javascript XML)
+
+JSX lets us write HTML like markup inside JS file 
+Need to wrap all the elements in a single tag before returning 
+Every piece of UI is a component in react 
+We can use props to send information inside a component. It is unidirectional. 
+We can use useState, a react hook which lets us add a state variable to our component 

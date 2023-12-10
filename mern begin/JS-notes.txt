@@ -1,0 +1,23 @@
+Javascript characteristics
+
+1. High Abstraction -- High level command to execute multiple below level tasks
+2. Do not need to handle garbage collection
+3. JIT compiled language. (Just in Time) It is not a purely interpreted language. 
+4. Multi Paradigm. (Paradigm means the way of style of programming) We can do 1. Procedural Programming. 2. OOP. 3. Functional Programming
+5. Dynamically typed. Do not need to tell variable types.
+6. It runs on Goggle's v8 engine.
+
+Functions 
+1. setTimeout(() => {
+
+},1000)                 It works after 1 second
+
+2. setInterval          It repeats after a certain amount of time infinitely
+3. clearInterval        It stops the setInterval
+4. clearTimeout         It stops timeout
+
+
+Concepts 
+
+1. a++ --> execute and then increment
+2. ++a --> increment and then execute
