@@ -1,0 +1,23 @@
+nav{
+    background-color: white;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin: 50px 320px 32px 320px;
+}
+
+.logo{
+        color: #111;
+    font-family: Exo 2;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 64px */
+}
+
+.line{
+    width: 1280px;
+    height: 1px;
+    margin: 50px 320px 32px 320px;
+}

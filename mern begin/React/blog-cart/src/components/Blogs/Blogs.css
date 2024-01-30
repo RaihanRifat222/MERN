@@ -1,0 +1,56 @@
+.cover{
+    width: 845px;
+    height: 450px;
+    
+    margin: 32px 24px 32px 320px;
+    object-position: center;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.post-details{
+    display: flex;
+    margin: 44px 24px 32px 320px;
+    text-align: left;
+    color: #111;
+    font-family: Exo 2;
+    font-style: normal;
+    line-height: 160%;
+}
+.post-details p{
+    margin: 16px 0px;
+}
+.author{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.date{
+
+   font-size: 16px;
+   font-weight: 600;
+   color: rgba(17, 17, 17, 0.60);
+}
+
+.title{
+    font-size: 40px;
+    text-align: left;
+    font-weight: 700;
+    margin: 44px 24px 32px 320px;
+}
+
+.read{
+    color: #6047EC;
+font-family: Exo 2;
+margin: 21px 24px 32px 320px;
+text-align: left;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-decoration-line: underline;
+}

@@ -1,0 +1,30 @@
+[
+        {
+            "id": 1,
+            "name": "Basic",
+            "price": 9.99,
+            "features": [
+                "Standard Definition (SD) streaming",
+                "1 device at a time"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Standard",
+            "price": 12.99,
+            "features": [
+                "High Definition (HD) streaming",
+                "2 devices at a time"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Premium",
+            "price": 15.99,
+            "features": [
+                "Ultra High Definition (UHD) streaming",
+                "4 devices at a time"
+            ]
+        }
+    ]
+ 
